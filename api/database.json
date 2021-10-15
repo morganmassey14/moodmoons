@@ -1,0 +1,83 @@
+{
+    "users:": [
+        {
+            "id": 1,
+            "name": "Morgan Massey",
+            "email": "morganmassey@me.com"
+        },
+        {
+            "id": 2,
+            "name": "Jillian Duke",
+            "email": "jillianduke@me.com"
+        }
+    ],
+    "yogaPoses": [
+        {
+            "id": 1,
+            "name": "Child's Pose",
+            "discription": "Gently stretches the hips, thighs, and ankles. It relieves back and neck pain when done with head and torso supported",
+            "url": "https://www.youtube.com/watch?v=2MJGg-dUKh0"
+        }
+    ],
+    "meditations": [
+        {
+            "id": 1,
+            "name": "Loving Kindness",
+            "discription": "This meditation focuses on unconditional love without expectations",
+            "url": "https://www.youtube.com/watch?v=yCt6AYI3kHU"
+        }
+    ],
+    "breathingExercises": [
+        {
+            "id": 1,
+            "name": "Box Breathing",
+            "discription": "This breathing exercise can heighten performance and concentration while also being a powerful stress reliever",
+            "url": "https://www.youtube.com/watch?v=tEmt1Znux58"
+        }
+    ],
+    "journalEntries": [
+        {
+            "id": 1,
+            "userId": 1,
+            "yogaId": 1,
+            "meditationId": 1,
+            "breathingId": 1,
+            "moodId": 2,
+            "journalLog": "Doing my exercises today really helped lower my anxiety. I am excited to see my progess next week."
+        }
+    ],
+    "moods": [
+        {
+            "id": 1,
+            "mood": "Angry"
+        },
+        {
+            "id": 2,
+            "mood": "Anxious"
+        },
+        {
+            "id": 3,
+            "mood": "Energetic"
+        },
+        {
+            "id": 4,
+            "mood": "Calm"
+        },
+        {
+            "id": 5,
+            "mood": "Sad"
+        },
+        {
+            "id": 6,
+            "mood": "Focused"
+        },
+        {
+            "id": 7,
+            "mood": "Happy"
+        },
+        {
+            "id": 8,
+            "mood": "Tired"
+        }
+    ]
+}
