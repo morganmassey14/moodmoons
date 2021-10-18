@@ -24,6 +24,7 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
         <>
             <nav className="navbar">
                 <div className="logo__img"><img className="logo" src={logo} alt="Mood Moons" /></div>
+                <div className="nav__flex__bar">
                 <ul className="navbar">
                     {isAuthenticated ?
                         <li className="navbar__link">
@@ -52,7 +53,9 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
                         </li>
                         : null}
                 </ul>
+                </div>
             </nav>
+
         </>
     )
 }
