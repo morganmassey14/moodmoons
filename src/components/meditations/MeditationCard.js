@@ -8,11 +8,11 @@ export const MeditationCard = ({ meditation }) => {
 <div className="meditation-section">
             <section className="meditation">
             <picture>
-                <img src={require(`../../images/${meditation.image}`).default} alt="My Dog" />
+                <img src={require(`../../images/${meditation.image}`).default} alt="Mediation Name" />
             </picture>
-            <h3 className="poseName">{meditation.name} </h3>
+            <h3 className="meditationName">{meditation.name} </h3>
             <div>{meditation.description}</div>
-            <div><a href={meditation.url} target="_blank">{meditation.url}</a></div>
+            <div><a href={meditation.url} target="_blank">Watch Video</a></div>
         </section>
         </div>
         </>
