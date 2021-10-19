@@ -7,13 +7,19 @@ import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { Redirect } from "react-router"
 import { BreathingExerciseList } from "./breathing/BreathingExerciseList"
+import { JournalEntryList } from "./journal/JournalList"
+import { JournalForm } from "./journal/JournalForm"
 
 
 export const ApplicationViews = ({ isAuthenticated, setAuthUser }) => {
     return (
         <>
             <Route exact path="/">
-                {isAuthenticated ? <Journal /> : <Redirect to="/login" />}
+                {isAuthenticated ? <JournalEntryList /> : <Redirect to="/login" />}
+            </Route>
+
+            <Route path="/journal/create">
+                <JournalForm />
             </Route>
 
             <Route exact path="/login">
