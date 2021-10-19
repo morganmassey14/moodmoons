@@ -193,7 +193,6 @@
       "description": "Bee breath gives you instant way to relieve tension, anger and anxiety. People suffering from hypertension should practice this breathing technique as it calms down the agitated mind",
       "url": "https://www.youtube.com/watch?v=GepGmj5sTjs"
     },
-
     {
       "id": 9,
       "image": "ocean.png",
@@ -201,51 +200,50 @@
       "description": "has a balancing influence on the entire cardiorespiratory system and the nervous system. Practicing Ocean Breathing helps calm the mind and body",
       "url": "https://www.youtube.com/watch?v=IQrsJ-yZWV8"
     }
-
   ],
   "journalEntries": [
     {
-      "id": 1,
       "userId": 1,
-      "yogaId": 1,
+      "yogaPoseId": 2,
       "meditationId": 1,
-      "breathingId": 1,
-      "moodId": 2,
-      "journalLog": "Doing my exercises today really helped lower my anxiety. I am excited to see my progess next week."
+      "breathingExerciseId": 4,
+      "moodId": 3,
+      "journalLog": "I felt really good after doing this",
+      "id": 1
     }
   ],
   "moods": [
     {
       "id": 1,
-      "mood": "Angry"
+      "name": "Angry"
     },
     {
       "id": 2,
-      "mood": "Anxious"
+      "name": "Anxious"
     },
     {
       "id": 3,
-      "mood": "Energetic"
+      "name": "Energetic"
     },
     {
       "id": 4,
-      "mood": "Calm"
+      "name": "Calm"
     },
     {
       "id": 5,
-      "mood": "Sad"
+      "name": "Sad"
     },
     {
       "id": 6,
-      "mood": "Focused"
+      "name": "Focused"
     },
     {
       "id": 7,
-      "mood": "Happy"
+      "name": "Happy"
     },
     {
       "id": 8,
-      "mood": "Tired"
+      "name": "Tired"
     }
   ]
 }
