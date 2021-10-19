@@ -74,63 +74,63 @@
   "meditations": [
     {
       "id": 1,
-      "image": "logo.png",
+      "image": "lovingkindness.png",
       "name": "Loving Kindness",
       "description": "This meditation focuses on unconditional love without expectations",
       "url": "https://www.youtube.com/watch?v=Ppku7i3ypGM"
     },
     {
       "id": 2,
-      "image": "logo.png",
+      "image": "mindfulness.png",
       "name": "Mindfulness",
       "description": "In mindfulness meditation, you simply observe and take note of any patterns",
       "url": "https://www.youtube.com/watch?v=ZToicYcHIOU"
     },
     {
       "id": 3,
-      "image": "logo.png",
+      "image": "focused.png",
       "name": "Focused",
       "description": "Focused meditation involves concentration using any of the five senses",
       "url": "https://www.youtube.com/watch?v=7o-oqjiLAOs"
     },
     {
       "id": 4,
-      "image": "logo.png",
+      "image": "movement.png",
       "name": "Movement",
       "description": "This practice may include walking through the woods, gardening, qigong, and other gentle forms of motion",
       "url": "https://www.youtube.com/watch?v=2Gyi-Z1SPh0"
     },
     {
       "id": 5,
-      "image": "logo.png",
+      "image": "mantra.png",
       "name": "Mantra",
       "description": "This type of meditation uses a repetitive sound to clear the mind",
       "url": "https://www.youtube.com/watch?v=zwTGyO3MdP4"
     },
     {
       "id": 6,
-      "image": "logo.png",
+      "image": "transcendental.png",
       "name": "Transcendental",
       "description": "This practice is for those who like structure and are serious about maintaining a meditation practice",
       "url": "https://www.youtube.com/watch?v=0jJdsHvNZIM"
     },
     {
       "id": 7,
-      "image": "logo.png",
+      "image": "pmr.png",
       "name": "Progressive Relaxation",
       "description": "Also known as body scan meditation, progressive relaxation is a practice aimed at reducing tension in the body and promoting relaxation",
       "url": "https://www.youtube.com/watch?v=Ppku7i3ypGM"
     },
     {
       "id": 8,
-      "image": "logo.png",
+      "image": "visualization.png",
       "name": "Visualization",
       "description": "Visualization meditation is a technique focused on enhancing feelings of relaxation, peace, and calmness by visualizing positive scenes or images",
       "url": "https://www.youtube.com/watch?v=t1rRo6cgM_E"
     },
     {
       "id": 9,
-      "image": "logo.png",
+      "image": "spiritual.png",
       "name": "Spiritual",
       "description": "Spiritual meditation is used in Eastern religions, such as Hinduism and Daoism, and in Christian faith",
       "url": "https://www.youtube.com/watch?v=G0QdWOcB6Ho"
