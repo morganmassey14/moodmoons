@@ -143,7 +143,65 @@
       "name": "Box Breathing",
       "description": "This breathing exercise can heighten performance and concentration while also being a powerful stress reliever",
       "url": "https://www.youtube.com/watch?v=tEmt1Znux58"
+    },
+    {
+      "id": 2,
+      "image": "logo.png",
+      "name": "Alternate Nostril",
+      "description": "Alternate nostril breathing involves blocking off one nostril at a time as you breathe through the other, alternating between nostrils in a regular pattern",
+      "url": "https://www.youtube.com/watch?v=8VwufJrUhic"
+    },
+    {
+      "id": 3,
+      "image": "logo.png",
+      "name": "Belly Breathing",
+      "description": "Belly breathing helps you relax, lowering the harmful effects of the stress hormone cortisol on your body",
+      "url": "https://www.youtube.com/watch?v=c3YyjUmDapc"
+    },
+    {
+      "id": 4,
+      "image": "logo.png",
+      "name": "Pursed Lip Breathing",
+      "description": "Pursed lip breathing helps control shortness of breath, and provides a quick and easy way to slow your pace of breathing, making each breath more effective",
+      "url": "https://www.youtube.com/watch?v=dDpX7pGdPR4"
+    },
+    {
+      "id": 5,
+      "image": "logo.png",
+      "name": "4-7-8",
+      "description": "The 4-7-8 technique forces the mind and body to focus on regulating the breath, and are useful for combating anxiety because they help fortify the connection between mind and body",
+      "url": "https://www.youtube.com/watch?v=1Dv-ldGLnIY"
+    },
+    {
+      "id": 6,
+      "image": "logo.png",
+      "name": "Lion's Breath",
+      "description": "Lion’s Breath not only stretches the muscles in your face, but it also relieves tension and tightness while improving circulation. It’s an energetic and awakening breath that will also help to ease the mind",
+      "url": "https://www.youtube.com/watch?v=xdUyHPa66A4"
+    },
+    {
+      "id": 7,
+      "image": "logo.png",
+      "name": "Resonant Breathing",
+      "description": "Resonant breathing is the practice of slowing your breathing rate to approximately six breaths per minute. This requires complete control over your breathing",
+      "url": "https://www.youtube.com/watch?v=DUbAHGPtNM4"
+    },
+    {
+      "id": 8,
+      "image": "logo.png",
+      "name": "Humming Bee Breath",
+      "description": "Bee breath gives you instant way to relieve tension, anger and anxiety. People suffering from hypertension should practice this breathing technique as it calms down the agitated mind",
+      "url": "https://www.youtube.com/watch?v=GepGmj5sTjs"
+    },
+
+    {
+      "id": 9,
+      "image": "logo.png",
+      "name": "Ocean Breath",
+      "description": "has a balancing influence on the entire cardiorespiratory system and the nervous system. Practicing Ocean Breathing helps calm the mind and body",
+      "url": "https://www.youtube.com/watch?v=IQrsJ-yZWV8"
     }
+
   ],
   "journalEntries": [
     {
