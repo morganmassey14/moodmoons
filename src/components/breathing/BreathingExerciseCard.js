@@ -12,7 +12,7 @@ export const BreathingExerciseCard = ({ breathingExercise }) => {
             </picture>
             <h3 className="exerciseName">{breathingExercise.name}</h3>
             <div>{breathingExercise.description}</div>
-            <div><a href={breathingExercise.url} target="Watch Video">{breathingExercise.url}</a></div>
+            <div><a href={breathingExercise.url} target="_blank">Watch Video</a></div>
         </section>
     </div>
     </>
