@@ -27,7 +27,7 @@ export const JournalEntryList = () => {
       <>  
        <section className="section-content">
                 <button type="button"
-                    className="btn"
+                    className="button"
                     onClick={() => { history.push("/journal/create") }}>
                     New Entry
                 </button>

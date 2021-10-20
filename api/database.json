@@ -203,14 +203,94 @@
   ],
   "journalEntries": [
     {
-      "id": 1,
       "userId": 1,
+      "yogaPoseId": 6,
       "meditationId": 1,
+      "breathingExerciseId": 4,
+      "moodId": 2,
+      "journalLog": "Today I felt really anxious, but after doing my exercises my anxiety level went down",
+      "timestamp": "Wed Oct 20 2021 1:36 pm",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "yogaPoseId": 2,
+      "meditationId": 3,
+      "breathingExerciseId": 8,
+      "moodId": 5,
+      "journalLog": "Today I felt really a little better than yesterday, less anxious, but a little sad. I am excited to see how doing these exercises helps.",
+      "timestamp": "Wed Oct 20 2021 1:37 pm",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "yogaPoseId": 5,
+      "meditationId": 5,
+      "breathingExerciseId": 9,
+      "moodId": 6,
+      "journalLog": "Today I feel a lot better. I feel very focused and clear headed after completing my exercises.",
+      "timestamp": "Wed Oct 20 2021 1:38 pm",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "yogaPoseId": 2,
+      "meditationId": 2,
+      "breathingExerciseId": 3,
+      "moodId": 7,
+      "journalLog": "I feel better today than I have in a while. Every morning I wake up and complete three exercises and it sets the tone for my day. ",
+      "timestamp": "Wed Oct 20 2021 1:38 pm",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "yogaPoseId": 3,
+      "meditationId": 2,
+      "breathingExerciseId": 6,
+      "moodId": 8,
+      "journalLog": "Today I feel really tired. I didn't get good sleep last night so I am going to do another round of exercises before bed to see if it helps.",
+      "timestamp": "Wed Oct 20 2021 1:39 pm",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "yogaPoseId": 7,
+      "meditationId": 7,
+      "breathingExerciseId": 4,
       "moodId": 1,
-      "yogaPoseId": 1,
-      "breathingExerciseId": 1,
-      "journalLog": "hoopla",
-      "timestamp": "Wed Oct 20 2021 1:32 pm"
+      "journalLog": "Today was a really hard day at work and I feel angry and worn out. I am going to keep on with my exercises and recognize my bad day and move on from it.",
+      "timestamp": "Wed Oct 20 2021 1:40 pm",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "yogaPoseId": 5,
+      "meditationId": 3,
+      "breathingExerciseId": 3,
+      "moodId": 3,
+      "journalLog": "I feel refreshed today. Even though yesterday was a bad day, I kept on and even did some of my breathing exercises throughout the day. I am even going to tackle some projects I've been putting off",
+      "timestamp": "Wed Oct 20 2021 1:40 pm",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "yogaPoseId": 4,
+      "meditationId": 2,
+      "breathingExerciseId": 2,
+      "moodId": 7,
+      "journalLog": "Today I feel really happy. I am so thankful I have been taking time each day to work on relaxing and helping my mental health.",
+      "timestamp": "Wed Oct 20 2021 1:41 pm",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "yogaPoseId": 5,
+      "meditationId": 9,
+      "breathingExerciseId": 2,
+      "moodId": 4,
+      "journalLog": "Today I feel a sense of calm that I haven't experienced in a while. I can't wait to update my therapist with my progress",
+      "timestamp": "Wed Oct 20 2021 1:42 pm",
+      "id": 9
     }
   ],
   "moods": [

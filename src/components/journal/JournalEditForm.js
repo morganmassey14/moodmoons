@@ -168,7 +168,7 @@ console.log(journalEntry)
                         <button
                             type="button" disabled={isLoading}
                             onClick={updateExistingJournalEntry}
-                            className="btn btn-primary"
+                            className="button"
                         >Submit</button>
                         <button onClick={handleCancel}> Cancel </button>
                     </div>
