@@ -147,11 +147,11 @@ export const JournalForm = () => {
 					<input type="text" id="journalLog" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="entrylog" value= {journalEntry.journalLog} />
 				</div>
 			</fieldset>
-            <button className="btn btn-primary"
+            <button className="button"
 				onClick={handleClickSaveJournalEntry}>
 				Save Entry
           </button>
-          <button className="journal-cancel-button"
+          <button className="button"
                 onClick={handleCancelButton}>
                 Cancel
             </button>
