@@ -5,6 +5,7 @@ import { getAllMeditations } from '../../modules/MeditationManager';
 import { getAllYogaPoses } from '../../modules/YogaPoseManager';
 import { getAllBreathingExercises } from '../../modules/BreathingExerciseManager';
 import { getAllMoods } from '../../modules/JournalManager';
+import { formatAMPM } from '../../Date';
 
 export const JournalForm = () => {
     let user = parseInt(sessionStorage.getItem("moodmoons_user"))
@@ -15,7 +16,8 @@ export const JournalForm = () => {
         meditationId: 0,
         breathingExerciseId: 0,
         moodId: 0,
-        journalLog: ""
+        journalLog: "",
+        timestamp: formatAMPM(new Date)
     });
 
     const [yogaPoses, setYogaPoses] = useState([]);

@@ -12,6 +12,7 @@ const history = useHistory();
             <div className="journal__meditiation">{journalEntry.meditation?.name}</div>
             <div className="journal__log">{journalEntry.journalLog}</div>
             <div className="journal__mood">{journalEntry.mood.name}</div>
+            <div className="journal__time">{journalEntry.timestamp}</div>
             <button className="journal__delete__edit" onClick={() => handleDeleteJournalEntry(journalEntry.id)}>Delete</button>
             <button type="button"
                 onClick={() => history.push(`/${journalEntry.id}/edit`)}>
