@@ -9,7 +9,7 @@ import { Redirect } from "react-router"
 import { BreathingExerciseList } from "./breathing/BreathingExerciseList"
 import { JournalEntryList } from "./journal/JournalList"
 import { JournalForm } from "./journal/JournalForm"
-
+import { JournalEditForm } from "./journal/JournalEditForm"
 
 export const ApplicationViews = ({ isAuthenticated, setAuthUser }) => {
     return (
@@ -20,6 +20,10 @@ export const ApplicationViews = ({ isAuthenticated, setAuthUser }) => {
 
             <Route path="/journal/create">
                 <JournalForm />
+            </Route>
+
+            <Route exact path="/:journalEntryId(\d+)/edit">
+                 <JournalEditForm />
             </Route>
 
             <Route exact path="/login">
