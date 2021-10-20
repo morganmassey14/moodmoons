@@ -30,3 +30,13 @@ export const getAllMoods = () => {
     return fetch(`${remoteURL}/moods`)
     .then(res => res.json())
 }
+
+export const update = (editedJournalEntry, id) => {
+    return fetch(`${remoteURL}/journalentries/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editedJournalEntry)
+    }).then(data => data.json());
+}

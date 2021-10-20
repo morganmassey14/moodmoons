@@ -72,9 +72,9 @@ export const JournalForm = () => {
         const meditationId = journalEntry.meditationId
         const moodId = journalEntry.moodId
         const yogaPoseId = journalEntry.yogaPoseId
-        const breathingExercisesId = journalEntry.breathingExercisesId
+        const breathingExerciseId = journalEntry.breathingExerciseId
 
-        if (meditationId === 0 || moodId === 0 || yogaPoseId === 0 || breathingExercisesId === 0) {
+        if (meditationId === 0 || moodId === 0 || yogaPoseId === 0 || breathingExerciseId === 0) {
             window.alert("Please select a meditation, yoga pose, breathing exercise, and mood")
         } else {
 
@@ -129,7 +129,7 @@ export const JournalForm = () => {
             <fieldset>
             <div className="form-group">
 					<label htmlFor="breathingExercise">Select Breathing Exercise </label>
-					<select value={journalEntry.breathingExercisesId} name="breathingExerciseId" id="breathingExerciseId" onChange={handleControlledInputChange} className="form-control" >
+					<select value={journalEntry.breathingExerciseId} name="breathingExerciseId" id="breathingExerciseId" onChange={handleControlledInputChange} className="form-control" >
 						<option value="0">Select a breathing exercise</option>
 						{breathingExercises.map(b => (
 							<option key={b.id} value={b.id}>
@@ -155,5 +155,4 @@ export const JournalForm = () => {
             </button>
         </form>
     )
-
 }

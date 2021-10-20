@@ -1,7 +1,8 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 export const JournalCard = ({ journalEntry, handleDeleteJournalEntry }) => {
-
+const history = useHistory();
 
     return (
         <section className="journal__entry">
@@ -12,7 +13,10 @@ export const JournalCard = ({ journalEntry, handleDeleteJournalEntry }) => {
             <div className="journal__log">{journalEntry.journalLog}</div>
             <div className="journal__mood">{journalEntry.mood.name}</div>
             <button className="journal__delete__edit" onClick={() => handleDeleteJournalEntry(journalEntry.id)}>Delete</button>
-
+            <button type="button"
+                onClick={() => history.push(`/${journalEntry.id}/edit`)}>
+                Edit
+            </button>
     </section>
     )
 }

@@ -203,13 +203,13 @@
   ],
   "journalEntries": [
     {
+      "id": 1,
       "userId": 1,
-      "yogaPoseId": 2,
-      "meditationId": 1,
-      "breathingExerciseId": 4,
-      "moodId": 3,
-      "journalLog": "I felt really good after doing this",
-      "id": 1
+      "meditationId": 2,
+      "moodId": 2,
+      "yogaPoseId": 3,
+      "breathingExerciseId": 2,
+      "journalLog": "updaaaaate"
     }
   ],
   "moods": [
