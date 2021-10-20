@@ -16,7 +16,8 @@ export const JournalEditForm = () => {
         meditationId: 0,
         breathingExerciseId: 0,
         moodId: 0,
-        journalLog: ""
+        journalLog: "",
+        timestamp: ""
     });
 
 
@@ -85,7 +86,8 @@ export const JournalEditForm = () => {
         moodId: parseInt(journalEntry.moodId),
         yogaPoseId: parseInt(journalEntry.yogaPoseId),
         breathingExerciseId: parseInt(journalEntry.breathingExerciseId),
-        journalLog: journalEntry.journalLog
+        journalLog: journalEntry.journalLog,
+        timestamp: journalEntry.timestamp
         }
         if (editedJournalEntryObj.meditationId === 0 || editedJournalEntryObj.moodId === 0 || editedJournalEntryObj.yogaPoseId === 0 || editedJournalEntryObj.breathingExercisesId === 0) {
             window.alert("Please select a meditation, yoga pose, breathing exercise, and mood")

@@ -205,11 +205,12 @@
     {
       "id": 1,
       "userId": 1,
-      "meditationId": 2,
-      "moodId": 2,
-      "yogaPoseId": 3,
-      "breathingExerciseId": 2,
-      "journalLog": "updaaaaate"
+      "meditationId": 1,
+      "moodId": 1,
+      "yogaPoseId": 1,
+      "breathingExerciseId": 1,
+      "journalLog": "hoopla",
+      "timestamp": "Wed Oct 20 2021 1:32 pm"
     }
   ],
   "moods": [
