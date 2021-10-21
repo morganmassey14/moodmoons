@@ -10,9 +10,12 @@ export const YogaPoseCard = ({ yogaPose }) => {
             <picture>
                 <img src={require(`../../images/${yogaPose.image}`).default} alt="My Dog" />
             </picture>
-            <h3 className="poseName">{yogaPose.name} </h3>
+            <h1 className="poseName">{yogaPose.name} </h1>
             <div>{yogaPose.description}</div>
-            <div><a href={yogaPose.url} target="_blank">Watch Video</a></div>
+            <div><a href={yogaPose.url}  target="_blank">
+           <button type="button" class="btn">Watch Video
+           </button>
+           </a></div>
         </section>
         </div>
         </>

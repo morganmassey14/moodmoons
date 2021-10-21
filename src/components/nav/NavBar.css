@@ -25,6 +25,8 @@
     margin: auto 20px;
     font-weight: 500;
     color: #55628F;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: large;
 }
 
 a.navbar__link:hover {

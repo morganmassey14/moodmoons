@@ -10,9 +10,13 @@ export const BreathingExerciseCard = ({ breathingExercise }) => {
             <picture>
                 <img src={require(`../../images/${breathingExercise.image}`).default} alt="Breathing Image" />
             </picture>
-            <h3 className="exerciseName">{breathingExercise.name}</h3>
+            <h1 className="exerciseName">{breathingExercise.name}</h1>
             <div>{breathingExercise.description}</div>
-            <div><a href={breathingExercise.url} target="_blank">Watch Video</a></div>
+            <div><a href={breathingExercise.url}  target="_blank">
+            <button type="button" class="btn">
+                    Watch Video
+                </button>
+                 </a></div>
         </section>
     </div>
     </>

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom";
-
 import "./Login.css"
+import logologin from "../../images/logologin.png"
 
 export const Register = ({ setAuthUser }) => {
 
@@ -61,33 +61,50 @@ export const Register = ({ setAuthUser }) => {
     }
 
     return (
-        <main style={{ textAlign: "center" }}>
-
+        <main className="container--register" style={{ textAlign: "center" }}>
             <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
                 <button className="button--close" onClick={e => setConflictDialog(false)}>Close</button>
             </dialog>
+            <section className="register">
+                <form id= "form" className="form" className="topBefore" onSubmit={handleRegister}>
+                    <div className="login__logo__img"><img className="logologin" src={logologin} alt="Mood Moons" /></div>
+                    <fieldset>
+                        <label htmlFor="firstName"></label>
+                        <input type="text" 
+                        name="firstName" 
+                        id="firstName" 
+                        className="firstName" 
+                        placeholder="First name" 
+                        required autoFocus value={registerUser.firstName} 
+                        onChange={handleInputChange} />
+                    </fieldset>
+                    <fieldset>
+                        <label htmlFor="lastName"></label>
+                        <input type="text" 
+                        name="lastName" 
+                        id="lastName" 
+                        className="lastName" 
+                        placeholder="Last name" 
+                        required value={registerUser.lastName} 
+                        onChange={handleInputChange} />
+                    </fieldset>
+                    <fieldset>
+                        <label htmlFor="inputEmail"></label>
+                        <input type="email" 
+                        name="email" 
+                        id="email" className="email" 
+                        placeholder="Email address" 
+                        required value={registerUser.email} 
+                        onChange={handleInputChange} />
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit"> Sign in </button>
+                        <button onClick={handleCancel}> Cancel </button>
+                    </fieldset>
 
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Application Name</h1>
-                <fieldset>
-                    <label htmlFor="firstName"> First Name </label>
-                    <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="lastName"> Last Name </label>
-                    <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last name" required value={registerUser.lastName} onChange={handleInputChange} />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="inputEmail"> Email address </label>
-                    <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
-                </fieldset>
-                <fieldset>
-                    <button type="submit"> Sign in </button>
-                    <button onClick={handleCancel}> Cancel </button>
-                </fieldset>
-
-            </form>
+                </form>
+            </section>
         </main>
     )
 }

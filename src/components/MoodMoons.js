@@ -21,8 +21,8 @@ export const Moodmoons = () => {
     
     return (
         <>
-        <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated} />
-        <ApplicationViews setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} />
+       
+        <ApplicationViews setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} clearUser={clearUser} />
         </>
     )
 }

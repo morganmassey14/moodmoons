@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom"
 import "./Login.css"
+import logologin from "../../images/logologin.png"
+
 
 export const Login = ({ setAuthUser }) => {
     const [loginUser, setLoginUser] = useState({ email: "" })
@@ -29,7 +31,6 @@ export const Login = ({ setAuthUser }) => {
         existingUserCheck()
             .then(exists => {
                 if (exists) {
-                    // The user id is saved under the key nutshell_user in session Storage. Change below if needed!
                     setAuthUser(exists)
                     history.push("/")
                 } else {
@@ -39,34 +40,35 @@ export const Login = ({ setAuthUser }) => {
     }
 
     return (
+        
         <main className="container--login">
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>User does not exist</div>
                 <button className="button--close" onClick={e => setExistDialog(false)}>Close</button>
             </dialog>
-            <section>
-                <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Nutshell</h1>
-                    <h2>Please sign in</h2>
+            <section className="main">
+                <form id= "form" className="topBefore" onSubmit={handleLogin}>
+                <div className="login__logo__img"><img className="logologin" src={logologin} alt="Mood Moons" /></div>
                     <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
+                        <label htmlFor="inputEmail"></label>
                         <input type="email"
                             id="email"
-                            className="form-control"
+                            className="email"
                             placeholder="Email address"
                             required autoFocus
                             value={loginUser.email}
                             onChange={handleInputChange} />
                     </fieldset>
-                    <fieldset>
-                        <button type="submit">
+                    <div className="loginbutton">
+                
+                        <button className= "signin_register" type="submit">
                             Sign in
                         </button>
-                    </fieldset>
-                </form>
-            </section>
-            <section className="link--register">
-                <Link to="/register">Register for an account</Link>
+                    <button className= "signin_register" type="register">
+                <Link to="/register" style={{ color: '#55628F' }}>Register for an account</Link>
+            </button>
+            </div>
+            </form>
             </section>
         </main>
     )

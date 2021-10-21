@@ -10,9 +10,13 @@ export const MeditationCard = ({ meditation }) => {
             <picture>
                 <img src={require(`../../images/${meditation.image}`).default} alt="Mediation Name" />
             </picture>
-            <h3 className="meditationName">{meditation.name} </h3>
+            <h1 className="meditationName">{meditation.name} </h1>
             <div>{meditation.description}</div>
-            <div><a href={meditation.url} target="_blank">Watch Video</a></div>
+            <div><a href={meditation.url}  target="_blank">
+                <button type="button" class="btn">
+                    Watch Video
+                </button>
+                </a></div>
         </section>
         </div>
         </>
