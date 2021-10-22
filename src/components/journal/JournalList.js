@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { deleteJournalEntry, getJournalEntryByUser } from "../../modules/JournalManager"
 import { JournalCard } from './JournalCard'
 import { useHistory } from 'react-router';
+import './Journal.css'
 
 
 export const JournalEntryList = () => {
@@ -27,9 +28,9 @@ export const JournalEntryList = () => {
 
     return (
         <>
-            <section className="section-content">
+            <section className="newEntryButton">
                 <button type="button"
-                    className="button"
+                    className="buttonEntry"
                     onClick={() => { history.push("/journal/create") }}>
                     New Entry
                 </button>

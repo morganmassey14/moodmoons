@@ -5,6 +5,8 @@ import { getAllMeditations } from '../../modules/MeditationManager';
 import { getAllYogaPoses } from '../../modules/YogaPoseManager';
 import { getAllBreathingExercises } from '../../modules/BreathingExerciseManager';
 import { getAllMoods } from '../../modules/JournalManager';
+import './JournalForm.css'
+import journallogo from "../../images/journallogo.png"
 
 export const JournalEditForm = () => {
     let user = parseInt(sessionStorage.getItem("moodmoons_user"))
@@ -99,9 +101,8 @@ export const JournalEditForm = () => {
 }
 console.log(journalEntry)
     return (
-        <>
+        <>  <div className="journal__logo"><img className="journallogo" src={journallogo} alt="Journal Logo" /></div>
             <form className="journalEditForm">
-                <h2 className="journalForm__title">New Journal</h2>
                 <fieldset>
                     <div className="formgrid">
                         <label htmlFor="meditation">Select Meditation </label>
@@ -110,19 +111,6 @@ console.log(journalEntry)
                             {meditations.map(m => (
                                 <option key={m.id} value={m.id}>
                                     {m.name}
-                                </option>
-                            ))}
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div className="formgrid">
-                        <label htmlFor="mood">Select Mood </label>
-                        <select value={journalEntry.moodId} name="moodId" id="moodId" onChange={handleFieldChange} className="form-control" >
-                            <option value="0">Select a meditation</option>
-                            {moods.map(z => (
-                                <option key={z.id} value={z.id}>
-                                    {z.name}
                                 </option>
                             ))}
                         </select>
@@ -156,21 +144,35 @@ console.log(journalEntry)
                 </fieldset>
                 <fieldset>
                     <div className="formgrid">
+                        <label htmlFor="mood">Select Mood </label>
+                        <select value={journalEntry.moodId} name="moodId" id="moodId" onChange={handleFieldChange} className="form-control" >
+                            <option value="0">Select a meditation</option>
+                            {moods.map(z => (
+                                <option key={z.id} value={z.id}>
+                                    {z.name}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div className="formgrid">
+                    <label htmlFor="name">Journal Log</label>
                         <input
                             type="text"
                             required
-                            className="form-control"
+                            className="journallog"
                             onChange={handleFieldChange}
                             id="journalLog"
                             value={journalEntry.journalLog}
                         />
-                        <label htmlFor="name">Journal Log</label>
+                        
                         <button
                             type="button" disabled={isLoading}
                             onClick={updateExistingJournalEntry}
-                            className="button"
+                            className="buttonSubmit"
                         >Submit</button>
-                        <button onClick={handleCancel}> Cancel </button>
+                        <button className="buttonCancel" onClick={handleCancel}> Cancel </button>
                     </div>
                 </fieldset>
             </form>

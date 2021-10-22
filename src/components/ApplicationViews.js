@@ -1,6 +1,5 @@
 import React from "react"
 import { Route } from "react-router-dom"
-import { Journal } from "./journal/JournalList"
 import { YogaPoseList } from "./yoga/YogaPoseList"
 import { MeditationList } from "./meditations/MeditationList"
 import { Login } from "./auth/Login"

@@ -18,7 +18,7 @@
     justify-content: space-evenly;
 }
 
-button {
+.buttonDelete {
     font-family: Dosis, sans-serif;
 	color: #55628f;
 	font-size: 15px;
@@ -34,6 +34,92 @@ button {
     margin-top:15px;
 }
 
-button:hover {
+.button:hover {
 	background: linear-gradient(180deg, #f6f6f6 9%, #ffffff 100%);
 }
+
+.buttonSubmit {
+    font-family: Dosis, sans-serif;
+	color: #55628f;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 1px #dcdcdc solid;
+	padding: 10px 18px;
+	background: linear-gradient(180deg, #ffffff 9%, #f6f6f6 100%);
+	text-shadow: 0px 1px 0px #ffffff;
+	box-shadow: inset 0px 0px 2px 0px #ffffff;
+	cursor: pointer;
+	align-items: center;
+    margin-right: 10px;
+    margin-top:15px;
+}
+
+.buttonCancel {
+    font-family: Dosis, sans-serif;
+	color: #55628f;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 1px #dcdcdc solid;
+	padding: 10px 18px;
+	background: linear-gradient(180deg, #ffffff 9%, #f6f6f6 100%);
+	text-shadow: 0px 1px 0px #ffffff;
+	box-shadow: inset 0px 0px 2px 0px #ffffff;
+	cursor: pointer;
+	align-items: center;
+    margin-right: 10px;
+    margin-top:15px;
+}
+
+.buttonEdit{
+    font-family: Dosis, sans-serif;
+	color: #55628f;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 1px #dcdcdc solid;
+	padding: 10px 18px;
+	background: linear-gradient(180deg, #ffffff 9%, #f6f6f6 100%);
+	text-shadow: 0px 1px 0px #ffffff;
+	box-shadow: inset 0px 0px 2px 0px #ffffff;
+	cursor: pointer;
+	align-items: center;
+    margin-right: 10px;
+    margin-top:15px;
+}
+
+.buttonEntry
+    {
+        font-family: Dosis, sans-serif;
+        color: #55628f;
+        font-size: 15px;
+        border-radius: 5px;
+        border: 1px #dcdcdc solid;
+        padding: 10px 18px;
+        background: linear-gradient(180deg, #ffffff 9%, #f6f6f6 100%);
+        text-shadow: 0px 1px 0px #ffffff;
+        box-shadow: inset 0px 0px 2px 0px #ffffff;
+        cursor: pointer;
+        align-items: center;
+        margin-right: 10px;
+        margin-top:15px;
+    }
+
+    .buttonSave {
+     
+            font-family: Dosis, sans-serif;
+            color: #55628f;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px #dcdcdc solid;
+            padding: 10px 18px;
+            background: linear-gradient(180deg, #ffffff 9%, #f6f6f6 100%);
+            text-shadow: 0px 1px 0px #ffffff;
+            box-shadow: inset 0px 0px 2px 0px #ffffff;
+            cursor: pointer;
+            align-items: center;
+            margin-right: 10px;
+            margin-top:15px;
+    }
+
+    .newEntryButton {
+       margin-left: 90%;
+    }
