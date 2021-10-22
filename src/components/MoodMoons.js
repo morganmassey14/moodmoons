@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import { ApplicationViews } from "./ApplicationViews"
-import { NavBar } from "./nav/NavBar"
 
 export const Moodmoons = () => {
     
@@ -21,7 +20,6 @@ export const Moodmoons = () => {
     
     return (
         <>
-       
         <ApplicationViews setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} clearUser={clearUser} />
         </>
     )

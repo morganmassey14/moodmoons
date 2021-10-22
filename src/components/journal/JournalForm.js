@@ -6,6 +6,8 @@ import { getAllYogaPoses } from '../../modules/YogaPoseManager';
 import { getAllBreathingExercises } from '../../modules/BreathingExerciseManager';
 import { getAllMoods } from '../../modules/JournalManager';
 import { formatAMPM } from '../../Date';
+import './JournalForm.css'
+import journallogo from "../../images/journallogo.png"
 
 export const JournalForm = () => {
     let user = parseInt(sessionStorage.getItem("moodmoons_user"))
@@ -87,8 +89,9 @@ export const JournalForm = () => {
     }
 
     return (
+        <>
+        <div className="journal__logo"><img className="journallogo" src={journallogo} alt="Journal Logo" /></div>
         <form className="journalForm">
-            <h2 className="journalForm__title">New Journal</h2>
             <fieldset>
             <div className="form-group">
 					<label htmlFor="meditation">Select Meditation </label>
@@ -97,19 +100,6 @@ export const JournalForm = () => {
 						{meditations.map(m => (
 							<option key={m.id} value={m.id}>
 								{m.name}
-							</option>
-						))}
-					</select>
-				</div> 
-            </fieldset>
-            <fieldset>
-            <div className="form-group">
-					<label htmlFor="mood">Select Mood </label>
-					<select value={journalEntry.moodId} name="moodId" id="moodId" onChange={handleControlledInputChange} className="form-control" >
-						<option value="0">Select a meditation</option>
-						{moods.map(z => (
-							<option key={z.id} value={z.id}>
-								{z.name}
 							</option>
 						))}
 					</select>
@@ -142,19 +132,33 @@ export const JournalForm = () => {
 				</div> 
             </fieldset>
             <fieldset>
+            <div className="form-group">
+					<label htmlFor="mood">Select Mood </label>
+					<select value={journalEntry.moodId} name="moodId" id="moodId" onChange={handleControlledInputChange} className="form-control" >
+						<option value="0">Select Mood </option>
+						{moods.map(z => (
+							<option key={z.id} value={z.id}>
+								{z.name}
+							</option>
+						))}
+					</select>
+				</div> 
+            </fieldset>
+            <fieldset>
 				<div className="form-group">
 					<label htmlFor="journalLog">Journal Log</label>
-					<input type="text" id="journalLog" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="entrylog" value= {journalEntry.journalLog} />
-				</div>
-			</fieldset>
-            <button className="button"
+					<input type="text" id="journalLog" onChange={handleControlledInputChange} required autoFocus className="journallog" placeholder="entrylog" value= {journalEntry.journalLog} />
+            <button className="buttonSave"
 				onClick={handleClickSaveJournalEntry}>
-				Save Entry
+				Save
           </button>
-          <button className="button"
+          <button className="buttonCancel"
                 onClick={handleCancelButton}>
                 Cancel
             </button>
-        </form>
+            </div>
+        </fieldset>
+    </form>
+        </>
     )
 }
