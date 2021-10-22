@@ -40,3 +40,8 @@ export const update = (editedJournalEntry, id) => {
         body: JSON.stringify(editedJournalEntry)
     }).then(data => data.json());
 }
+
+export const getJournalEntryByUser = (userId) => {
+    return fetch(`${remoteURL}/journalentries/?userId=${userId}&_expand=meditation&_expand=breathingExercise&_expand=yogaPose&_expand=mood`)
+    .then(res => res.json())
+}
