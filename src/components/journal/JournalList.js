@@ -1,41 +1,44 @@
 // this is the homepage
 import React, { useEffect, useState } from 'react';
-import { deleteJournalEntry, getAllJournalEntries} from "../../modules/JournalManager"
+import { deleteJournalEntry, getJournalEntryByUser } from "../../modules/JournalManager"
 import { JournalCard } from './JournalCard'
 import { useHistory } from 'react-router';
 
 
 export const JournalEntryList = () => {
     const [journalEntries, setJournalEntries] = useState([]);
+    let user = parseInt(sessionStorage.getItem("moodmoons_user"))
     const history = useHistory();
-  
+
     const getJournalEntries = () => {
-        return getAllJournalEntries().then(journalEntriesFromAPI => { setJournalEntries(journalEntriesFromAPI)
+        return getJournalEntryByUser(user).then(response => {
+            setJournalEntries(response)
         })
     }
 
     const handleDeleteJournalEntry = id => {
         deleteJournalEntry(id)
-        .then(() => getAllJournalEntries().then(setJournalEntries))
+            .then(() => getJournalEntryByUser(user).then(setJournalEntries))
     }
 
     useEffect(() => {
         getJournalEntries()
-    },[])
+    }, [])
 
     return (
-      <>  
-       <section className="section-content">
+        <>
+            <section className="section-content">
                 <button type="button"
                     className="button"
                     onClick={() => { history.push("/journal/create") }}>
                     New Entry
                 </button>
             </section>
-    <div className="container-cards">
-    {journalEntries.map(journalEntry => <JournalCard key={journalEntry.id} journalEntry={journalEntry}
-    handleDeleteJournalEntry={handleDeleteJournalEntry} />)}
-</div>
-</>
+
+            <div className="container-cards">
+                {journalEntries.map (journalEntry => < JournalCard journalEntries = {journalEntry} key={journalEntry.id} journalEntry={journalEntry}
+                    handleDeleteJournalEntry={handleDeleteJournalEntry} />)}
+            </div>
+        </>
     )
 }
