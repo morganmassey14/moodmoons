@@ -13,7 +13,7 @@ export const YogaPoseCard = ({ yogaPose }) => {
             <h1 className="poseName">{yogaPose.name} </h1>
             <div>{yogaPose.description}</div>
             <div><a href={yogaPose.url}  target="_blank">
-           <button type="button" class="btn">Watch Video
+           <button type="button" className="buttonVideo">Watch Video
            </button>
            </a></div>
         </section>

@@ -10,6 +10,7 @@
     align-items: flex-start;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 160;
+    justify-content: space-around;
 }
     
 .container-cards {
@@ -20,18 +21,18 @@
 
 .buttonDelete {
     font-family: Dosis, sans-serif;
+    text-decoration: underline;
 	color: #55628f;
-	font-size: 15px;
-	border-radius: 5px;
-	border: 1px #dcdcdc solid;
-	padding: 10px 18px;
+	font-size: 12px;
+	border: 0px #dcdcdc solid;
+	/* padding: 20px 18px; */
 	background: linear-gradient(180deg, #ffffff 9%, #f6f6f6 100%);
 	text-shadow: 0px 1px 0px #ffffff;
 	box-shadow: inset 0px 0px 2px 0px #ffffff;
 	cursor: pointer;
-	align-items: center;
     margin-right: 10px;
-    margin-top:15px;
+    margin-top: 10px;
+    margin-left: 350px;
 }
 
 .button:hover {
@@ -56,18 +57,18 @@
 
 .buttonCancel {
     font-family: Dosis, sans-serif;
-	color: #55628f;
-	font-size: 15px;
-	border-radius: 5px;
-	border: 1px #dcdcdc solid;
-	padding: 10px 18px;
-	background: linear-gradient(180deg, #ffffff 9%, #f6f6f6 100%);
-	text-shadow: 0px 1px 0px #ffffff;
-	box-shadow: inset 0px 0px 2px 0px #ffffff;
+    text-decoration: underline;
+	color: black;
+	font-size: 12px;
+	border: 0px #55628f solid;
+	/* padding: 20px 18px; */
+	background: linear-gradient(180deg, #55628f 9%, #55628f 100%);
+	text-shadow: 0px 1px 0px #55628f;
+	box-shadow: inset 0px 0px 2px 0px #55628f;
 	cursor: pointer;
-	align-items: center;
     margin-right: 10px;
-    margin-top:15px;
+    margin-top: 10px;
+    margin-left: 400px;
 }
 
 .buttonEdit{
@@ -82,8 +83,8 @@
 	box-shadow: inset 0px 0px 2px 0px #ffffff;
 	cursor: pointer;
 	align-items: center;
-    margin-right: 10px;
     margin-top:15px;
+    margin-left: 340px;
 }
 
 .buttonEntry
@@ -115,11 +116,21 @@
             text-shadow: 0px 1px 0px #ffffff;
             box-shadow: inset 0px 0px 2px 0px #ffffff;
             cursor: pointer;
-            align-items: center;
             margin-right: 10px;
             margin-top:15px;
+
     }
 
     .newEntryButton {
        margin-left: 90%;
+    }
+
+    .submitButton {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .saveButton {
+        display: flex;
+        justify-content: space-around;
     }

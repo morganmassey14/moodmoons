@@ -13,7 +13,7 @@ export const BreathingExerciseCard = ({ breathingExercise }) => {
             <h1 className="exerciseName">{breathingExercise.name}</h1>
             <div>{breathingExercise.description}</div>
             <div><a href={breathingExercise.url}  target="_blank">
-            <button type="button" class="btn">
+            <button type="button" className="buttonVideo">
                     Watch Video
                 </button>
                  </a></div>

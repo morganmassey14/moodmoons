@@ -9,6 +9,11 @@
       "email": "timgann@me.com",
       "name": "Tim Gann",
       "id": 2
+    },
+    {
+      "email": "morgan@me.com",
+      "name": "Morgan Massey",
+      "id": 3
     }
   ],
   "yogaPoses": [
@@ -209,16 +214,6 @@
   "journalEntries": [
     {
       "userId": 1,
-      "yogaPoseId": 6,
-      "meditationId": 1,
-      "breathingExerciseId": 4,
-      "moodId": 2,
-      "journalLog": "Today I felt really anxious, but after doing my exercises my anxiety level went down",
-      "timestamp": "Wed Oct 20 2021 1:36 pm",
-      "id": 1
-    },
-    {
-      "userId": 1,
       "yogaPoseId": 2,
       "meditationId": 3,
       "breathingExerciseId": 8,
@@ -296,6 +291,16 @@
       "journalLog": "Today I feel a sense of calm that I haven't experienced in a while. I can't wait to update my therapist with my progress",
       "timestamp": "Wed Oct 20 2021 1:42 pm",
       "id": 9
+    },
+    {
+      "userId": 2,
+      "yogaPoseId": 1,
+      "meditationId": 1,
+      "breathingExerciseId": 1,
+      "moodId": 7,
+      "journalLog": "This is a new entry!",
+      "timestamp": "Mon Oct 25 2021 11:19 am",
+      "id": 10
     }
   ],
   "moods": [

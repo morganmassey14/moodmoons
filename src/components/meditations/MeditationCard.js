@@ -13,7 +13,7 @@ export const MeditationCard = ({ meditation }) => {
             <h1 className="meditationName">{meditation.name} </h1>
             <div>{meditation.description}</div>
             <div><a href={meditation.url}  target="_blank">
-                <button type="button" class="btn">
+                <button type="button" className="buttonVideo">
                     Watch Video
                 </button>
                 </a></div>

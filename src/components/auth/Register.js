@@ -99,10 +99,13 @@ export const Register = ({ setAuthUser }) => {
                         onChange={handleInputChange} />
                     </fieldset>
                     <fieldset>
-                        <button type="submit"> Sign in </button>
-                        <button onClick={handleCancel}> Cancel </button>
+                        <div className="registerbutton">
+                        <button className="buttonSubmitRegister" type="submit"> Sign in </button>
+                        </div>
+                        <button className="buttonCancelRegister" onClick={handleCancel}> Cancel </button>
+                        
                     </fieldset>
-
+                    
                 </form>
             </section>
         </main>

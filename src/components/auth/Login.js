@@ -61,11 +61,11 @@ export const Login = ({ setAuthUser }) => {
                     </fieldset>
                     <div className="loginbutton">
                 
-                        <button className= "signin_register" type="submit">
+                        <button className= "buttonSignIn" type="submit">
                             Sign in
                         </button>
-                    <button className= "signin_register" type="register">
-                <Link to="/register" style={{ color: '#55628F' }}>Register for an account</Link>
+                    <button className= "buttonRegister" type="register">
+                <Link to="/register" style={{ color: '#55628F' }}>Register</Link>
             </button>
             </div>
             </form>
