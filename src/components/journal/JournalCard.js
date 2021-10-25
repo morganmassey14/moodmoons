@@ -6,7 +6,9 @@ export const JournalCard = ({ journalEntry, handleDeleteJournalEntry }) => {
 const history = useHistory();
 
     return (
+        
         <section className="journal-section">
+            <div className="with-border">
             <div className="journal__log"><strong>{journalEntry.journalLog}</strong></div>
             <hr></hr>
             <div className="journal__time">Date: {journalEntry.timestamp}</div>
@@ -22,7 +24,8 @@ const history = useHistory();
             </button>
             </div>
             <button className="buttonDelete" onClick={() => handleDeleteJournalEntry(journalEntry.id)}>Delete</button>
-            
+            </div>
     </section>
-    )
+
+   )
 }
