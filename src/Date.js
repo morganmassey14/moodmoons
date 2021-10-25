@@ -1,3 +1,4 @@
+//this formats the date for the journal entries 
 export const formatAMPM = (date) => {
     const oldDate = new Date(Date.now());
     const newDate = oldDate.toDateString();

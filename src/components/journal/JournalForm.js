@@ -148,17 +148,20 @@ export const JournalForm = () => {
 				<div className="form-group">
 					<label htmlFor="journalLog">Journal Log</label>
 					<input type="text" id="journalLog" onChange={handleControlledInputChange} required autoFocus className="journallog" placeholder="entrylog" value= {journalEntry.journalLog} />
+				</div>
+                <div className="saveButton">
             <button className="buttonSave"
 				onClick={handleClickSaveJournalEntry}>
 				Save
           </button>
+          </div>
           <button className="buttonCancel"
                 onClick={handleCancelButton}>
                 Cancel
             </button>
-            </div>
-        </fieldset>
-    </form>
+           
+            </fieldset>
+        </form>
         </>
     )
 }

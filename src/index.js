@@ -4,7 +4,6 @@ import reportWebVitals from './reportWebVitals'
 import { BrowserRouter as Router } from "react-router-dom"
 import { Moodmoons } from "./components/MoodMoons"
 import "./index.css"
-// import font here
 
 ReactDOM.render(
   <React.StrictMode>

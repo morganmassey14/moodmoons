@@ -14,14 +14,15 @@ const history = useHistory();
             <div className="journal__user">{journalEntry.user?.name}</div>
             <div className="journal__yoga">Yoga Pose: {journalEntry.yogaPose?.name}</div>
             <div className="journal__breathing">Breathing Exercise: {journalEntry.breathingExercise?.name}</div>
-            <div className="journal__meditiation">Meditation :{journalEntry.meditation?.name}</div>
-            <div className="button__container">
-            <button className="buttonDelete" onClick={() => handleDeleteJournalEntry(journalEntry.id)}>Delete</button>
+            <div className="journal__meditiation">Meditation: {journalEntry.meditation?.name}</div>
+            <div className="editButton">
             <button className="buttonEdit" type="button"
                 onClick={() => history.push(`/${journalEntry.id}/edit`)}>
                 Edit
             </button>
             </div>
+            <button className="buttonDelete" onClick={() => handleDeleteJournalEntry(journalEntry.id)}>Delete</button>
+            
     </section>
     )
 }

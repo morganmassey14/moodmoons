@@ -166,14 +166,17 @@ console.log(journalEntry)
                             id="journalLog"
                             value={journalEntry.journalLog}
                         />
-                        
+                        </div>
+                       <div className="submitButton">
                         <button
                             type="button" disabled={isLoading}
                             onClick={updateExistingJournalEntry}
                             className="buttonSubmit"
                         >Submit</button>
+                        </div>
+                        <div className="cancelNewEntryButton">
                         <button className="buttonCancel" onClick={handleCancel}> Cancel </button>
-                    </div>
+                        </div>        
                 </fieldset>
             </form>
         </>
