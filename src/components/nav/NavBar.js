@@ -3,6 +3,7 @@ import { useHistory } from "react-router"
 import { Link } from "react-router-dom"
 import "./NavBar.css"
 import logo from "../../images/logo.png"
+import { GetUser } from "./GetUser"
 
 export const NavBar = ({ clearUser, isAuthenticated }) => {
 
@@ -46,6 +47,7 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
                         <li className="navbar__link" >
                             <a className="navbar__link" onClick={handleLogout} >Logout</a>
                         </li>
+                        {/* <GetUser /> */}
                 </ul>
                 </div>
             </nav>
