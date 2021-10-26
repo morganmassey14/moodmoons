@@ -43,6 +43,10 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
                         <li className="navbar__link">
                             <Link className="navbar__link" to="/breathingexercises">Breathing</Link>
                         </li>
+
+                        <li className="navbar__link">
+                            <Link className="navbar__link" to="/messages">Message Board</Link>
+                        </li>
                 
                         <li className="navbar__link" >
                             <a className="navbar__link" onClick={handleLogout} >Logout</a>

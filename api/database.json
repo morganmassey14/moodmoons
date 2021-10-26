@@ -336,5 +336,31 @@
       "id": 8,
       "name": "Tired"
     }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "messageLog": "NEWER NEWER newest this is the biggest one",
+      "timestamp": "Tue Oct 26 2021 3:22 pm",
+      "userId": 1
+    },
+    {
+      "userId": 1,
+      "messageLog": "Hello It's me Todd Rundgren",
+      "timestamp": "Tue Oct 26 2021 3:35 pm",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "messageLog": "This is a message from me",
+      "timestamp": "Tue Oct 26 2021 3:45 pm",
+      "userId": 2
+    },
+    {
+      "userId": 2,
+      "messageLog": "Hello its me again IT IS ME AGAIN",
+      "timestamp": "Tue Oct 26 2021 3:59 pm",
+      "id": 4
+    }
   ]
 }

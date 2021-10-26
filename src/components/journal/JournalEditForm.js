@@ -99,7 +99,6 @@ export const JournalEditForm = () => {
                 .then(() => history.push("/"))
         };
 }
-console.log(journalEntry)
     return (
         <>  <div className="journal__logo"><img className="journallogo" src={journallogo} alt="Journal Logo" /></div>
             <form className="journalEditForm">

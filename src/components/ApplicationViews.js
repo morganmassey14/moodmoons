@@ -10,15 +10,16 @@ import { JournalEntryList } from "./journal/JournalList"
 import { JournalForm } from "./journal/JournalForm"
 import { JournalEditForm } from "./journal/JournalEditForm"
 import { NavBar } from "./nav/NavBar"
-
+import { MessageList } from "./messages/MessageList"
+import { MessageEditForm } from "./messages/MessageEditForm"
 
 
 export const ApplicationViews = ({ isAuthenticated, setAuthUser, clearUser }) => {
-    
+
     return (
         <>  <Route path="/">
-            {isAuthenticated ? <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated}/> : null}
-            </Route>
+            {isAuthenticated ? <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated} /> : null}
+        </Route>
 
             <Route exact path="/login">
                 <Login setAuthUser={setAuthUser} />
@@ -49,6 +50,14 @@ export const ApplicationViews = ({ isAuthenticated, setAuthUser, clearUser }) =>
 
             <Route exact path="/breathingexercises">
                 <BreathingExerciseList />
+            </Route>
+
+            <Route exact path="/messages">
+                <MessageList />
+            </Route>
+
+            <Route exact path="/messages/:messageId(\d+)/edit">
+                <MessageEditForm />
             </Route>
         </>
     )
