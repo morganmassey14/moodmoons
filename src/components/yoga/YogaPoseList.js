@@ -20,6 +20,7 @@ export const YogaPoseList = () => {
     }, [])
     
     return (
+    
         <div className="container-cards">
             {yogaPoses.map(yogaPose => <YogaPoseCard key={yogaPose.id} yogaPose={yogaPose}/>)}
         </div>
