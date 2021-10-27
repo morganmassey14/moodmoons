@@ -86,6 +86,19 @@ fieldset {
 	display: inline-flex; 
 }
 
+.image  {
+    font-family: Dosis, sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px #55628f solid;
+    padding: 10px 18px;
+    margin-right: 10px;
+    margin-top:15px;
+    align-items: center;
+    cursor: pointer;
+	display: inline-flex; 
+}
+
 .topBefore {
     display: flex;
     flex-direction: column;
