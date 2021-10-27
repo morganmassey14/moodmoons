@@ -5,13 +5,13 @@ export const YogaPoseCard = ({ yogaPose }) => {
     return (
         <>
             <section className="container-cards">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
                             <img src={require(`../../images/${yogaPose.image}`).default} alt="My Dog" />
                         </div>
 
-                        <div class="flip-card-back">
+                        <div className="flip-card-back">
                             <h1 className="poseName">{yogaPose.name} </h1>
                             <div>{yogaPose.description}</div>
                             <div><a href={yogaPose.url} target="_blank">

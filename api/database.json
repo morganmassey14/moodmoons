@@ -1,19 +1,49 @@
 {
   "users": [
     {
-      "email": "jillianduke@me.com",
+      "id": 1,
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635363896/paoxvdmkqenlhnem2twu.png",
+      "userId": 2,
       "name": "Jillian Duke",
-      "id": 1
+      "email": "jillianduke@me.com"
     },
     {
-      "email": "timgann@me.com",
+      "id": 2,
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635364061/uvosxlkiiofzyge5dkvm.png",
+      "userId": 2,
       "name": "Tim Gann",
-      "id": 2
+      "email": "timgann@me.com"
     },
     {
-      "email": "morgan@me.com",
+      "id": 3,
+      "image": "childspose.png",
+      "userId": 2,
       "name": "Morgan Massey",
-      "id": 3
+      "email": "morgan@me.com"
+    },
+    {
+      "email": "kellishaffer@me.com",
+      "image": "childspose.png",
+      "name": "Kelli Shaffer",
+      "id": 4
+    },
+    {
+      "email": "jakelashenik@me.com",
+      "image": "childspose.png",
+      "name": "Jake Lashenik",
+      "id": 5
+    },
+    {
+      "email": "kylebarnett@me.com",
+      "image": "childspose.png",
+      "name": "Kyle  Barnett",
+      "id": 6
+    },
+    {
+      "email": "deverypage@me.com",
+      "name": "Devery Page",
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635367395/jbylyny286ht62ha20ze.png",
+      "id": 7
     }
   ],
   "yogaPoses": [

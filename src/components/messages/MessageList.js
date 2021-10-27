@@ -58,7 +58,7 @@ export const MessageList = () => {
         <>
             <div>
             <form >
-                    <fieldset className="messageForm">
+
                         <div>
                             <label htmlFor="messageLog"> </label>
                             <textarea id="messageLog" onChange={handleControlledInputChange} placeholder="Enter Message for the chat" size="50" value={message.messageLog} />
@@ -67,12 +67,12 @@ export const MessageList = () => {
                             onClick={handleClickSaveNewMessage}>
                             Save
                         </button>
-                    </fieldset>
                 </form>
             </div>
             <div className="message-cards">
                 {messages.map(message => <MessageCard handleDeleteMessage={handleDeleteMessage} key={message.id} message={message} />)}
             </div>
+
         </>
     )
 }

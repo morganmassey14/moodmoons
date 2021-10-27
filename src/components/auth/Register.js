@@ -5,10 +5,12 @@ import logologin from "../../images/logologin.png"
 
 export const Register = ({ setAuthUser }) => {
 
-    const [registerUser, setRegisterUser] = useState({ firstName: "", lastName: "", email: "" })
+    const [registerUser, setRegisterUser] = useState({ firstName: "", lastName: "", email: "", image:"" })
     const [conflictDialog, setConflictDialog] = useState(false)
+    const [image, setImage] = useState("")
 
     const history = useHistory()
+
 
     const handleInputChange = (event) => {
         const newUser = { ...registerUser }
@@ -22,6 +24,22 @@ export const Register = ({ setAuthUser }) => {
             .then(res => res.json())
             .then(user => !!user.length)
     }
+
+    const uploadImage = async (e) => {
+        const files = e.target.files;
+        const data = new FormData();
+        data.append("file", files[0]);
+        data.append("upload_preset", "ltpz1b8n");
+        const res = await fetch(
+            "https://api.cloudinary.com/v1_1/dexjhtget/image/upload",
+            {
+                method: "POST",
+                body: data,
+            }
+        );
+        const file = await res.json();
+        setImage(file.secure_url);
+    };
 
     const handleCancel = () => {
         history.push("/login")
@@ -41,7 +59,8 @@ export const Register = ({ setAuthUser }) => {
                         },
                         body: JSON.stringify({
                             email: registerUser.email,
-                            name: `${registerUser.firstName} ${registerUser.lastName}`
+                            name: `${registerUser.firstName} ${registerUser.lastName}`,
+                            image:  image ? image : registerUser.image,
                         })
                     })
                         .then(res => res.json())
@@ -98,6 +117,10 @@ export const Register = ({ setAuthUser }) => {
                         required value={registerUser.email} 
                         onChange={handleInputChange} />
                     </fieldset>
+                    <label className="image" htmlFor="image">upload</label>
+                <fieldset className="Image">
+                    <input type="file" onChange={uploadImage} />
+                </fieldset>
                     <fieldset>
                         <div className="registerbutton">
                         <button className="buttonSubmitRegister" type="submit"> Sign in </button>

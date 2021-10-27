@@ -9,6 +9,7 @@ export const Moodmoons = () => {
   const setAuthUser = (user) => {
     sessionStorage.setItem("moodmoons_user", user.id)
     sessionStorage.setItem("moodmoons_username", user.name)
+    sessionStorage.setItem("moodmoons_userimage", user.image)
     setIsAuthenticated(sessionStorage.getItem("moodmoons_user") !== null)
   }
 

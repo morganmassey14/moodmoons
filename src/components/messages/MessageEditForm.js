@@ -28,7 +28,6 @@ export const MessageEditForm = () => {
 
     const updateExistingMessage = event => {
         event.preventDefault()
- debugger
         const editedMessage = {
             id: parseInt(messageId),
             messageLog: message.messageLog,
