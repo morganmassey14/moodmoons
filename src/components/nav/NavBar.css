@@ -22,7 +22,7 @@
     text-decoration: none;
     list-style-type: none;
     white-space: nowrap;
-    margin: auto 30px;
+    margin: auto 11px;
     margin-right: 0px;
     font-weight: 400;
     color: #55628F;
@@ -38,11 +38,16 @@ a.navbar__link:hover {
     display: flex;
 }
 
-/* .intro {
-    color: #55628F;
-    border: 2px solid #55628F;
+.intro{
+    font-weight: 400;
+    color: white; 
     font-family: 'Titillium Web', sans-serif;
     font-size: large;
-    margin: auto;
-    margin-top: 50px;
-} */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-left: 200px;
+    margin-top: 70px;
+    display: inline-block;
+  
+}
