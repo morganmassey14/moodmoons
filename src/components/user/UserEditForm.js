@@ -3,7 +3,6 @@ import { useParams, useHistory } from "react-router"
 import { getUserById, updateUser } from "../../modules/UserManager"
 
 export const UserEditForm = () => {
-    let user = parseInt(sessionStorage.getItem("moodmoons_user"))
     const [isLoading, setIsLoading] = useState(false)
     const [users, setUsers] = useState({
         image: "",
@@ -27,7 +26,10 @@ export const UserEditForm = () => {
 
     useEffect(() => {
         getUserById(userId)
-            .then(userFromAPI => setUsers(userFromAPI))
+            .then(userFromAPI => {
+                setImage(userFromAPI.image)
+                setUsers(userFromAPI)
+            })
     }, [])
 
     const uploadImage = async (e) => {
@@ -54,7 +56,6 @@ export const UserEditForm = () => {
         const editedUser = {
             id: parseInt(userId),
             image: image ? image : users.image,
-            userId: user,
             name: users.name,
             email: users.email
         }
@@ -67,24 +68,25 @@ export const UserEditForm = () => {
         <>
             <form className="user">
                 <fieldset className="user-edit-form">
-
-                    <input type="text" id="name" onChange={handleFieldChange} placeholder="Change Name" value={users.name} />
-                </fieldset>
-                <fieldset className="user-edit-form">
-
-                    <input type="text" id="email" onChange={handleFieldChange} placeholder="Change Email" value={users.email} />
-                </fieldset>
-                <label className="update-user-image" htmlFor="image">upload</label>
-                <fieldset className="user-edit-form">
-                    <input type="file" onChange={uploadImage} />
-                </fieldset>
                 <div className="profileImageEdit">
+                <img className="mainImage" src={image} />
+                <fieldset className="file-input">
+                    <input type="file" id="file" className="file" onChange={uploadImage}/>
+                    <label for="file">Choose File</label>
+                </fieldset>
+                </div>
+                    <input type="text" className="name" id="name" onChange={handleFieldChange} placeholder="Change Name" value={users.name} />
+                </fieldset>
+                <fieldset className="user-edit-form">
+
+                    <input type="text" className="email" id="email" onChange={handleFieldChange} placeholder="Change Email" value={users.email} />
+                </fieldset>
+            
                     {isLoading ? (
                         <h4 style={{ marginTop: 20 }}>Loading...</h4>
                     ) : (
                         <>
-                            <img className="mainImage" src={image} />
-                            <button className="comment-save-button"
+                            <button className="userUpdateButton"
                                 variant="secondary" size="sm"
                                 disabled={isLoading}
                                 onClick={updateExistingUser}>
@@ -93,7 +95,7 @@ export const UserEditForm = () => {
                             <button className="userCancelButton" onClick={handleCancel}> Cancel </button>
 
                         </>)}
-                </div>
+
             </form>
 
 

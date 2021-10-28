@@ -2,48 +2,45 @@
   "users": [
     {
       "id": 1,
-      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635363896/paoxvdmkqenlhnem2twu.png",
-      "userId": 2,
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635438067/sezjlvxjbcojjpw5oovb.png",
       "name": "Jillian Duke",
       "email": "jillianduke@me.com"
     },
     {
       "id": 2,
-      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635364061/uvosxlkiiofzyge5dkvm.png",
-      "userId": 2,
-      "name": "Tim Gann",
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635438044/yfa3k3d6yhq86xy5ip9y.png",
+      "name": "Tim Gann ",
       "email": "timgann@me.com"
     },
     {
       "id": 3,
-      "image": "childspose.png",
-      "userId": 2,
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635438248/eevwelridieb5zfl3pvm.png",
       "name": "Morgan Massey",
-      "email": "morgan@me.com"
+      "email": "morganmassey@me.com"
     },
     {
-      "email": "kellishaffer@me.com",
-      "image": "childspose.png",
+      "id": 4,
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635438182/h0ofc0jzakad62ziq76m.png",
       "name": "Kelli Shaffer",
-      "id": 4
+      "email": "kellishaffer@me.com"
     },
     {
-      "email": "jakelashenik@me.com",
-      "image": "childspose.png",
+      "id": 5,
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635438152/bv92fghyic9jl75pwt98.png",
       "name": "Jake Lashenik",
-      "id": 5
+      "email": "jakelashenik@me.com"
     },
     {
-      "email": "kylebarnett@me.com",
-      "image": "childspose.png",
+      "id": 6,
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635438119/u4nbrd9ibcceokyappup.png",
       "name": "Kyle  Barnett",
-      "id": 6
+      "email": "kylebarnett@me.com"
     },
     {
-      "email": "deverypage@me.com",
+      "id": 7,
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635441784/dcp2rahww8e7vf855d2y.png",
       "name": "Devery Page",
-      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635367395/jbylyny286ht62ha20ze.png",
-      "id": 7
+      "email": "deverypage@me.com"
     }
   ],
   "yogaPoses": [
@@ -391,6 +388,12 @@
       "messageLog": "Hello its me again IT IS ME AGAIN",
       "timestamp": "Tue Oct 26 2021 3:59 pm",
       "id": 4
+    },
+    {
+      "userId": 2,
+      "messageLog": "hello its me",
+      "timestamp": "Thu Oct 28 2021 10:06 am",
+      "id": 5
     }
   ]
 }

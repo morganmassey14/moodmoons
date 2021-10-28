@@ -8,6 +8,7 @@ export const MessageList = () => {
     let user = parseInt(sessionStorage.getItem("moodmoons_user"))
     const [messages, setMessages] = useState([]);
 
+
     const [message, setMessage] = useState({
         userId: user,
         messageLog: "",
@@ -57,16 +58,15 @@ export const MessageList = () => {
     return (
         <>
             <div>
-            <form >
-
-                        <div>
-                            <label htmlFor="messageLog"> </label>
-                            <textarea id="messageLog" onChange={handleControlledInputChange} placeholder="Enter Message for the chat" size="50" value={message.messageLog} />
-                        </div>
-                        <button className="messageSaveButton"
-                            onClick={handleClickSaveNewMessage}>
-                            Save
-                        </button>
+                <form >
+                    <div>
+                        <label htmlFor="messageLog"> </label>
+                        <textarea id="messageLog" onChange={handleControlledInputChange} placeholder="Enter Message for the chat" size="50" value={message.messageLog} />
+                    </div>
+                    <button className="messageSaveButton"
+                        onClick={handleClickSaveNewMessage}>
+                        Save
+                    </button>
                 </form>
             </div>
             <div className="message-cards">
