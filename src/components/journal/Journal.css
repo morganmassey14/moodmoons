@@ -14,7 +14,7 @@
     font-weight: 160;
     justify-content: space-around;
     background-color: #D7CFE4;
-    border: 1.5px dotted #55628f;
+    /* border: 1.5px solid #55628f; */
     border-radius: 25px;
 }
 
@@ -139,4 +139,34 @@
     .saveButton {
         display: flex;
         justify-content: space-around;
+    }
+
+    .journal__time {
+        padding-bottom: 10px;
+        color: #55628f;
+    }
+
+    .journal__mood {
+        padding-bottom: 10px; 
+        color: #55628f;
+    }
+
+    .journal__yoga {
+        padding-bottom: 10px;
+        color: #55628f;
+    }
+
+    .journal__breathing {
+        padding-bottom: 10px;
+        color: #55628f;
+    }
+
+    .journal__meditiation {
+        color: #55628f;
+    }
+
+    h2 {
+        font-weight: 160;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 20px;
     }
