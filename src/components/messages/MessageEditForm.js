@@ -43,7 +43,7 @@ export const MessageEditForm = () => {
         <>
                  <form className="message">
 
-                <label className="update-message-header" htmlFor="messageLog">Update Message:</label>
+                <label className="update-message-header" htmlFor="messageLog"></label>
                 <fieldset className="message-edit-form">
 
                     <input type="text" id="messageLog" onChange={handleFieldChange} placeholder="Enter New Message" size="100" value={message.messageLog} />

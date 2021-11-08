@@ -9,14 +9,14 @@ const history = useHistory();
         
         <section className="journal-section">
             <div className="with-border">
-            <div className="journal__log"><strong>{journalEntry.journalLog}</strong></div>
+            <h2 className="journal__log">{journalEntry.journalLog}</h2>
             <hr></hr>
-            <div className="journal__time">Date: {journalEntry.timestamp}</div>
-            <div className="journal__mood">Mood: {journalEntry.mood.name}</div>
+            <div className="journal__time"><strong>Date</strong> <i>{journalEntry.timestamp}</i></div>
+            <div className="journal__mood"><strong>Mood</strong> <i>{journalEntry.mood.name}</i></div>
             <div className="journal__user">{journalEntry.user?.name}</div>
-            <div className="journal__yoga">Yoga Pose: {journalEntry.yogaPose?.name}</div>
-            <div className="journal__breathing">Breathing Exercise: {journalEntry.breathingExercise?.name}</div>
-            <div className="journal__meditiation">Meditation: {journalEntry.meditation?.name}</div>
+            <div className="journal__yoga"><strong>Yoga Pose</strong> <i>{journalEntry.yogaPose?.name}</i></div>
+            <div className="journal__breathing"><strong>Breathing Exercise</strong> <i>{journalEntry.breathingExercise?.name}</i></div>
+            <div className="journal__meditiation"><strong>Meditation:</strong> <i>{journalEntry.meditation?.name}</i></div>
             <div className="editButton">
             <button className="buttonEdit" type="button"
                 onClick={() => history.push(`/${journalEntry.id}/edit`)}>

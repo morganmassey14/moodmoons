@@ -7,8 +7,7 @@ export const GetUser = () => {
     if (user) {
         return (
             <div className="intro">
-                <p>{user}</p>
-                <img src={user.image} alt="User Image" />
+                <p>Namaste, {user}</p>
             </div>
         )
     } else {
