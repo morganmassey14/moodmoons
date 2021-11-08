@@ -1387,32 +1387,32 @@
   "messages": [
     {
       "userId": 1,
-      "messageLog": "I found this really cool article about how help reduce covid anxiety https://www.helpguide.org/articles/anxiety/coronavirus-anxiety.htm",
-      "timestamp": "Fri Oct 29 2021 9:55 am",
+      "messageLog": "I found this really cool article on anxiety coping skills today. Thought I would share here: https://www.healthline.com/health/mental-health/how-to-cope-with-anxiety#quick-coping-methods",
+      "timestamp": "Mon Nov 08 2021 10:48 am",
       "id": 1
     },
     {
       "userId": 2,
-      "messageLog": "Has anyone ever had any luck with EMDR?",
-      "timestamp": "Fri Oct 29 2021 9:56 am",
+      "messageLog": "After a few weeks of doing yoga poses daily, I was able to see how much it helped my body relax. I found this really great sequence for anxiety on youtube if anyone else wants to try: https://www.youtube.com/watch?v=bJJWArRfKa0",
+      "timestamp": "Mon Nov 08 2021 10:50 am",
       "id": 2
     },
     {
-      "userId": 3,
-      "messageLog": "Looking for a good therapist recommendation in the Nashville Area?",
-      "timestamp": "Fri Oct 29 2021 9:57 am",
+      "userId": 7,
+      "messageLog": "Did you guys know there are workouts that can help reduce anxiety too? Here is a link to my favorite video! https://www.youtube.com/watch?v=Q-NbcgLN22o",
+      "timestamp": "Mon Nov 08 2021 10:52 am",
       "id": 3
     },
     {
-      "userId": 7,
-      "messageLog": "Has anyone ever tried group therapy? How was your experience?",
-      "timestamp": "Fri Oct 29 2021 9:57 am",
+      "userId": 5,
+      "messageLog": "Shakti Yoga Studio is hosting a mediation workshop this Saturday if anyone is interested http://www.shaktiyoganashville.com/",
+      "timestamp": "Mon Nov 08 2021 10:54 am",
       "id": 4
     },
     {
       "userId": 1,
       "messageLog": "THIS IS THE NEW MESSAGE",
-      "timestamp": "Fri Oct 29 2021 10:30 am",
+      "timestamp": "Mon Nov 08 2021 1:45 pm",
       "id": 5
     }
   ]

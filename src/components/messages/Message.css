@@ -11,7 +11,7 @@
 	cursor: pointer;
 	align-items: center;
     margin-top:15px;
-    margin-left: 340px;
+    margin-left: 680px;
 }
 
 .messageCancelButton {
@@ -27,7 +27,7 @@
 	cursor: pointer;
 	align-items: center;
     margin-top:15px;
-    margin-left: 340px;
+    margin-left: 10px;
 }
 
 .messageDeleteButton {
@@ -73,7 +73,8 @@
 	cursor: pointer;
 	align-items: center;
     margin-top:15px;
-   margin-left: 70%;   
+	margin-left: 540px;
+
 }
 
 .newMessageButton {
@@ -122,4 +123,17 @@ h4 {
 	font-weight: 160;
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 20px;
+}
+
+#messageLog {
+    font-family: Dosis, sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px #55628f solid;
+    padding: 100px 18px;
+     margin-right: 800px; 
+    margin-top:15px;
+    align-items: flex-start;
+    cursor: pointer;
+	display: inline-flex;
 }

@@ -117,9 +117,10 @@ export const Register = ({ setAuthUser }) => {
                         required value={registerUser.email} 
                         onChange={handleInputChange} />
                     </fieldset>
-                    <label className="image" htmlFor="image">upload</label>
-                <fieldset className="Image">
-                    <input type="file" onChange={uploadImage} />
+                    <div className="registerButtons">
+                    <fieldset className="file-input">
+                    <input type="file" id="file" className="file" onChange={uploadImage}/>
+                    <label for="file">Choose File</label>
                 </fieldset>
                     <fieldset>
                         <div className="registerbutton">
@@ -128,6 +129,7 @@ export const Register = ({ setAuthUser }) => {
                         <button className="buttonCancelRegister" onClick={handleCancel}> Cancel </button>
                         
                     </fieldset>
+                    </div>
                     
                 </form>
             </section>
