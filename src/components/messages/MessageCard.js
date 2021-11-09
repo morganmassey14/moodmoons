@@ -20,7 +20,7 @@ export const MessageCard = ({ message, handleDeleteMessage }) => {
                         onClick={() => history.push(`/messages/${message.id}/edit`)}>
                         Edit
                     </button>
-                    <button className="messageDeleteButton" onClick={() => handleDeleteMessage(message.id)}>Delete</button>
+                    
         </section> 
         </div>
         

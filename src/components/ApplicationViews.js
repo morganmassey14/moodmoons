@@ -11,7 +11,6 @@ import { JournalForm } from "./journal/JournalForm"
 import { JournalEditForm } from "./journal/JournalEditForm"
 import { NavBar } from "./nav/NavBar"
 import { MessageList } from "./messages/MessageList"
-import { MessageForm } from "./messages/MessageForm"
 import { MessageEditForm } from "./messages/MessageEditForm"
 import { UserList } from "./user/UserProfile"
 import { UserEditForm } from "./user/UserEditForm"
@@ -60,10 +59,6 @@ export const ApplicationViews = ({ isAuthenticated, setAuthUser, clearUser }) =>
 
             <Route exact path="/messages/:messageId(\d+)/edit">
                 <MessageEditForm />
-            </Route>
-
-            <Route path="/message/create">
-                <MessageForm />
             </Route>
 
             <Route exact path="/users">
