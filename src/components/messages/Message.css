@@ -73,7 +73,7 @@
 	cursor: pointer;
 	align-items: center;
     margin-top:15px;
-	margin-left: 540px;
+	margin-left: 420px;
 
 }
 
@@ -102,14 +102,15 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+	padding-bottom: 20px;
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Titillium Web', sans-serif;
     font-weight: 160;
     justify-content: space-around;
     background-color: #D7CFE4;
-    /* border: 1.5px solid #55628f; */
     border-radius: 25px;
+	margin-top: 40px;
 
 }
 
@@ -126,14 +127,23 @@ h4 {
 }
 
 #messageLog {
+	outline: none;
     font-family: Dosis, sans-serif;
     border-radius: 5px;
     font-size: 15px;
-    border: 1px #55628f solid;
-    padding: 100px 18px;
-     margin-right: 800px; 
-    margin-top:15px;
+    padding: 150px 50px; 
+    margin-top: 40px;
     align-items: flex-start;
     cursor: pointer;
 	display: inline-flex;
+	margin-left: 200px;
+	margin-right: 20px;
+	border-style: solid;
+   border-width: 7px;
+   border-image: linear-gradient(45deg, #D7CFE4, #55628f) 1;
+}
+	
+
+.messageContainer{
+	display: flex;
 }

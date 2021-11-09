@@ -6,12 +6,12 @@ export const BreathingExerciseCard = ({ breathingExercise }) => {
         <>
 
             <section className="container-cards">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
                             <img src={require(`../../images/${breathingExercise.image}`).default} alt="Breathing Image" />
                         </div>
-                        <div class="flip-card-back">
+                        <div className="flip-card-back">
                             <h1 className="exerciseName">{breathingExercise.name}</h1>
                             <div>{breathingExercise.description}</div>
                             <div><a href={breathingExercise.url} target="_blank">

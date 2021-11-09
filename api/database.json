@@ -1386,12 +1386,6 @@
   ],
   "messages": [
     {
-      "userId": 1,
-      "messageLog": "I found this really cool article on anxiety coping skills today. Thought I would share here: https://www.healthline.com/health/mental-health/how-to-cope-with-anxiety#quick-coping-methods",
-      "timestamp": "Mon Nov 08 2021 10:48 am",
-      "id": 1
-    },
-    {
       "userId": 2,
       "messageLog": "After a few weeks of doing yoga poses daily, I was able to see how much it helped my body relax. I found this really great sequence for anxiety on youtube if anyone else wants to try: https://www.youtube.com/watch?v=bJJWArRfKa0",
       "timestamp": "Mon Nov 08 2021 10:50 am",
@@ -1414,6 +1408,18 @@
       "messageLog": "THIS IS THE NEW MESSAGE",
       "timestamp": "Mon Nov 08 2021 1:45 pm",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "messageLog": "THIS IS THE NEW MESSAGE",
+      "timestamp": "Mon Nov 08 2021 5:26 pm",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "messageLog": "hello",
+      "timestamp": "Mon Nov 08 2021 5:32 pm",
+      "id": 7
     }
   ]
 }

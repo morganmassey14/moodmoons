@@ -26,13 +26,11 @@ Please visit me on LinkedIn to ask any questions you may have about the app.
 
 ### Project ERD Diagram
 
-![Project ERD](/erd.png)
+![Project ERD](/moodmoonsERD.png)
 
 
 ### Wireframe
 
-![Journal Wireframe](/article.png)
-![Cards Form Wireframe](/articlesform.png)
-![Login Wireframe](/friends.png)
-![Register Wireframe](/messages.png)
+![Project Wireframe](/moodmoonsWIREFRAME.png)
+
 
