@@ -1,5 +1,7 @@
 {
   "name": "moodmoons",
+  "description": "An app that has medition, breathing, and yoga exercises designed to help anxiety symptoms. Also a daily journal to lof results",
+  "author": "Morgan Massey",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,5 +38,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  
   }
 }

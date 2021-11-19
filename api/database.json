@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1636052562/hyxcjmnkpgijijjyqyg1.png",
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1636472861/s5r1ilksvgwmorlhhzcn.png",
       "name": "Jillian Duke",
       "email": "jillianduke@me.com"
     },
@@ -14,7 +14,7 @@
     },
     {
       "id": 3,
-      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1635438248/eevwelridieb5zfl3pvm.png",
+      "image": "https://res.cloudinary.com/dexjhtget/image/upload/v1636653641/qmkzp7jfslbgf7vstb2p.png",
       "name": "Morgan Massey",
       "email": "morganmassey@me.com"
     },
@@ -270,14 +270,14 @@
   ],
   "journalEntries": [
     {
+      "id": 2,
       "userId": 1,
-      "yogaPoseId": 2,
       "meditationId": 3,
-      "breathingExerciseId": 8,
       "moodId": 5,
+      "yogaPoseId": 2,
+      "breathingExerciseId": 8,
       "journalLog": "Today I felt really a little better than yesterday, less anxious, but a little sad. I am excited to see how doing these exercises helps.",
-      "timestamp": "Wed Oct 20 2021 1:37 pm",
-      "id": 2
+      "timestamp": "Wed Oct 20 2021 1:37 pm"
     },
     {
       "userId": 1,
@@ -1348,6 +1348,26 @@
       "journalLog": "Today I felt really a little better than yesterday, less anxious, but a little sad. I am excited to see how doing these exercises helps.",
       "timestamp": "Thu Nov 04 2021 3:07 pm",
       "id": 109
+    },
+    {
+      "userId": 3,
+      "yogaPoseId": 2,
+      "meditationId": 1,
+      "breathingExerciseId": 2,
+      "moodId": 3,
+      "journalLog": "Today I feel really happy. I am so thankful I have been taking time each day to work on relaxing and helping my mental health.",
+      "timestamp": "Thu Nov 11 2021 11:08 am",
+      "id": 110
+    },
+    {
+      "id": 111,
+      "userId": 3,
+      "meditationId": 1,
+      "moodId": 4,
+      "yogaPoseId": 3,
+      "breathingExerciseId": 1,
+      "journalLog": "Today I feel a sense of calm that I haven't experienced in a while. I can't wait to update my therapist with my progress",
+      "timestamp": "Thu Nov 11 2021 11:58 am"
     }
   ],
   "moods": [
@@ -1392,12 +1412,6 @@
       "id": 2
     },
     {
-      "userId": 7,
-      "messageLog": "Did you guys know there are workouts that can help reduce anxiety too? Here is a link to my favorite video! https://www.youtube.com/watch?v=Q-NbcgLN22o",
-      "timestamp": "Mon Nov 08 2021 10:52 am",
-      "id": 3
-    },
-    {
       "userId": 5,
       "messageLog": "Shakti Yoga Studio is hosting a mediation workshop this Saturday if anyone is interested http://www.shaktiyoganashville.com/",
       "timestamp": "Mon Nov 08 2021 10:54 am",
@@ -1405,20 +1419,20 @@
     },
     {
       "userId": 1,
-      "messageLog": "THIS IS THE NEW MESSAGE",
-      "timestamp": "Mon Nov 08 2021 1:45 pm",
+      "messageLog": "This app has really been helping me manage my anxiety symptoms. I am so thankful I have been taking the time every day to help myself feel better.",
+      "timestamp": "Tue Nov 09 2021 9:42 am",
       "id": 5
     },
     {
-      "userId": 1,
-      "messageLog": "THIS IS THE NEW MESSAGE",
-      "timestamp": "Mon Nov 08 2021 5:26 pm",
+      "userId": 11,
+      "messageLog": "I don't know if anyone knows about Centerstone, but they are a super great resource for medical care on a sliding scale! https://centerstone.org/?gclid=CjwKCAiA1aiMBhAUEiwACw25MVVHj4oyq1vS9x2m_1QQj-AVpA2NJ-jJPaMrIOSI-xNu3g_pDqPqaRoCXOQQAvD_BwE",
+      "timestamp": "Tue Nov 09 2021 9:45 am",
       "id": 6
     },
     {
-      "userId": 1,
-      "messageLog": "hello",
-      "timestamp": "Mon Nov 08 2021 5:32 pm",
+      "userId": 3,
+      "messageLog": "hello!",
+      "timestamp": "Thu Nov 11 2021 11:59 am",
       "id": 7
     }
   ]
