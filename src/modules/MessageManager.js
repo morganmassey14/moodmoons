@@ -1,4 +1,4 @@
-const remoteURL = "http://localhost:2021"
+const remoteURL = "https://mood-moons-api.herokuapp.com/"
 
 export const getAllMessages = () => {
     return fetch (`${remoteURL}/messages?_expand=user`)

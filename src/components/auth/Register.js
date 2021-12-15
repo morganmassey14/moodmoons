@@ -20,7 +20,7 @@ export const Register = ({ setAuthUser }) => {
 
     const existingUserCheck = () => {
         // If your json-server URL is different, please change it below!
-        return fetch(`http://localhost:2021/users?email=${registerUser.email}`)
+        return fetch(`https://mood-moons-api.herokuapp.com/users?email=${registerUser.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
     }
@@ -52,7 +52,7 @@ export const Register = ({ setAuthUser }) => {
             .then((userExists) => {
                 if (!userExists) {
                     // If your json-server URL is different, please change it below!
-                    fetch("http://localhost:2021/users", {
+                    fetch("https://mood-moons-api.herokuapp.com/users", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
