@@ -1,4 +1,4 @@
-const remoteURL = "https://mood-moons-api.herokuapp.com/"
+const remoteURL = "https://mood-moons-api.herokuapp.com"
 
 export const getBreathingExerciseById = (breathingExerciseId) => {
     return fetch (`${remoteURL}/breathingexercises/${breathingExerciseId}`)
