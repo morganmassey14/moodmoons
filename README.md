@@ -1,36 +1,28 @@
 # Mood Moons
 
-![Relax Animation]( https://media.giphy.com/media/7PK51oAq6EcUnrQYmW/giphy-downsized-large.gif)
+## Meet the Developer
+Hi! I'm Morgan Massey, and I would love to connect with you!
+* [Visit my Portfolio] (https://morganmassey14.github.io/)
+* [Visit me on LinkedIn] (https://www.linkedin.com/in/morganelizmassey/) 
 
-**Mood Moons** is an app designed for users to select different exercises to help with managing anxiety. The users are able to choose different breathing, meditation, and yoga exercises specifically selected to calm anxiety responses in the body. The user is also able to log which exercises they chose, their mood, and write a couple sentences about what they are feeling.
+## What is Mood Moons?
+Moon Moons is my Nashville Software School Front-End Capstone Project. This app was built after the first three months of the program, and is single page application created with React JavaScript and JSON-server.  
 
-## Setup
+## Visit Mood Moons
+* [Mood Moons] (http://mood-moons.herokuapp.com/)
 
-To utilize the full features of **Mood Moons** you will need to first clone the repository in your terminal.
+## Problem Statement
+"How might I help individuals with anxiety manage their symptoms, track their moods daily, and ultimately discover new coping skills?"
 
-   `git@github.com:morganmassey14/moodmoons.git`
+## The Solution
+I decided to create a mood-tracking journal with a list of yoga poses, meditations, and breathing exercises. A new user would begin by trying out the different methods and logging how they helped their symptoms. As time passed, the user would see what worked well for them and what didn't, and hopefully, implement these exercises into their daily lives.
 
-After cloning the repository,`cd` into the `api` directory and enter the following command into the terminal.
+## The Full Design Process
+* [Planning in Figma](https://www.figma.com/file/RvIhNmfWEDlLpYLeJ8acCW/Mood-Moons)
 
-   `json-server -p 2021 -w database.json`
+## ERD
+![Mood Moons ERD](/moodmoonsERD.png)
 
- Finally, check back out into main, and enter the following command into the terminal:
-
-   `npm start`  
-
-### Meet The Creator
-
-Please visit me on LinkedIn to ask any questions you may have about the app.
-
- - [Morgan Massey](https://www.linkedin.com/in/morgan-massey-a3b44221a/)
-
-### Project ERD Diagram
-
-![Project ERD](/moodmoonsERD.png)
-
-
-### Wireframe
-
-![Project Wireframe](/moodmoonsWIREFRAME.png)
-
+## A Video Walk Through
+* [View Video Demo] (https://www.youtube.com/watch?v=fKhexuUOOos&t=5s)
 
